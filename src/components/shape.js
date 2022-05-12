@@ -5,14 +5,13 @@
 //Create a base class called "Shape" with methods drawShape, calculateArea and color property that is initialised with a color.
 
 import React, { Component } from "react";
+import { ModuleFilenameHelpers } from "webpack";
 
 class Shape extends Component{
-    constructor(){
-        this.drawShape() = function(){};
-        this.calculateArea() = function(){};
+    constructor(){       
         this.color()="red";
-
-
     }
+    drawShape() {};
+    calculateArea() {};
 }
-export default Shape;
+module.exports = Shape;
